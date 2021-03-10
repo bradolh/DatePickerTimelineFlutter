@@ -227,6 +227,11 @@ class DatePickerController {
   void setDatePickerState(_DatePickerState state) {
     _datePickerState = state;
   }
+  
+   void setPickedDate(DateTime date) {
+    _datePickerState._currentDate = date;
+     jumpToSelection();
+  }
 
   void jumpToSelection() {
     assert(_datePickerState != null,
