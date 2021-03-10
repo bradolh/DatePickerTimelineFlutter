@@ -230,7 +230,6 @@ class DatePickerController {
   
    void setPickedDate(DateTime date) {
     _datePickerState._currentDate = date;
-     jumpToSelection();
   }
 
   void jumpToSelection() {
